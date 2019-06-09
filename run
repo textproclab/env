@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir -p ~/Env
+
+docker run -it -p 9999:9999 \
+    --rm --name textproc \
+    -v ~/Env:/mnt textproc
